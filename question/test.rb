@@ -10,7 +10,7 @@ server = WEBrick::HTTPServer.new({
 }
 
 #server.mount('/test', WEBrick::HTTPServlet::ERBHandler, 'test.html.erb')
-server.mount('/kadai', WEBrick::HTTPServlet::ERBHandler, 'kadai.html.erb')
+server.mount('/', WEBrick::HTTPServlet::ERBHandler, 'kadai.html.erb')
 # この一行を追記
 #server.mount('/indicate.cgi', WEBrick::HTTPServlet::CGIHandler, 'indicate.rb')
 #server.mount('/goya.cgi',WEBrick::HTTPServlet::CGIHandler,'goya.rb')
